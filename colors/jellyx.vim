@@ -194,10 +194,17 @@ HI PmenuThumb       -       140     -
 HI WildMenu         0       150     bold
 HI Title            225     -       -
 
-HI SpellBad         160     bg      underline   guisp=#df0000
-HI SpellCap         189     bg      underline
-HI SpellRare        168     bg      underline
-HI SpellLocal       87      bg      underline
+if has('gui_running')
+    HI SpellBad         -     bg      underline   guisp=#df0000
+    HI SpellCap         -     bg      underline
+    HI SpellRare        -     bg      underline
+    HI SpellLocal       -      bg      underline
+else
+    HI SpellBad         160     bg      underline   guisp=#df0000
+    HI SpellCap         189     bg      underline
+    HI SpellRare        168     bg      underline
+    HI SpellLocal       87      bg      underline
+endif
 
 HI SpecialKey       77      -       -
 HI ErrorMsg         -       88      -
