@@ -243,6 +243,22 @@ HI diffText         bg      174     NONE
 "}}}
 
 
+""" For ctags-highlighting plugin {{{
+
+hi link ClassName       Special
+hi link DefinedName     Constant
+hi link Enumerator      Macro
+hi link EnumerationName Enumerator
+"hi link Member          Identifier
+hi Member               guifg=#FEC5C6     guibg=NONE        gui=NONE      ctermfg=magenta        ctermbg=NONE        cterm=NONE
+hi link Union           Type
+hi link GlobalConstant  Constant
+hi link GlobalVariable  Identifier
+hi link LocalVariable   Identifier
+
+"}}}
+
+
 """ Custom groups {{{
 
 if exists('g:jellyx_show_whitespace')
